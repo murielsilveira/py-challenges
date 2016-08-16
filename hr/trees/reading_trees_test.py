@@ -1,5 +1,6 @@
 from unittest import TestCase
-from reading_trees import Node, preOrder, postOrder, inOrder
+from node import Node
+from reading_trees import preOrder, postOrder, inOrder
 
 
 class ReadingTreesTests(TestCase):
