@@ -30,3 +30,16 @@ def postOrder(root):
     answer = []
     post_order(root)
     return answer
+
+
+def inOrder(root):
+    def in_order(root):
+        if root is None:
+            return
+        in_order(root.left)
+        answer.append(root.data)
+        in_order(root.right)
+
+    answer = []
+    in_order(root)
+    return answer

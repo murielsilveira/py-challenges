@@ -1,5 +1,5 @@
 from unittest import TestCase
-from reading_trees import Node, preOrder, postOrder
+from reading_trees import Node, preOrder, postOrder, inOrder
 
 
 class ReadingTreesTests(TestCase):
@@ -29,3 +29,6 @@ class ReadingTreesTests(TestCase):
 
     def test_returns_an_array_with_the_values_in_post_order(self):
         self.assertEqual([1, 4, 5, 6, 2, 3], postOrder(self.data))
+
+    def test_returns_an_array_with_the_values_in_in_order(self):
+        self.assertEqual([1, 5, 4, 3, 6, 2], inOrder(self.data))
